@@ -5,33 +5,9 @@
 </ion-header>
 
 <ion-content class="card-background-page">
-  <ion-card>
-    <img src="assets/imgs/love.jpg" />
-    <div class="card-title">Shanghai</div>
-    <div class="card-subtitle">2015/5/26</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/sanya.jpg" />
-    <div class="card-title">Sanya</div>
-    <div class="card-subtitle">2016/5/26</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/shenzhen.jpg" />
-    <div class="card-title">Shenzhen</div>
-    <div class="card-subtitle">2017/5/26</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/dubi.jpg" />
-    <div class="card-title">Nanyang</div>
-    <div class="card-subtitle">2017/5/26</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/xiamen.jpg" />
-    <div class="card-title">Xiamen</div>
-    <div class="card-subtitle">2017/5/26</div>
+  <ion-card *ngFor="let item of Items" (click)="openPictureDetailsPage(item)">
+    <img [src]="'assets/imgs/' + item.imgsrc" />
+    <div class="card-title">{{item.city}}</div>
+    <div class="card-subtitle">{{item.date}}</div>
   </ion-card>
 </ion-content>

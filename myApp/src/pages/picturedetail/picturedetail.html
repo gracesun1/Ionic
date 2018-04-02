@@ -1,12 +1,14 @@
+<ion-navbar>
+  <ion-title>Picture</ion-title>
+</ion-navbar>
 <ion-card>
-  <img src="img/me.jpg"/>
+  <img [src]="'assets/imgs/'+ Item.img" />
   <ion-card-content>
     <ion-card-title>
-      Smile
-      </ion-card-title>
+      {{Item.title}}
+    </ion-card-title>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+      {{Item.description}}
     </p>
   </ion-card-content>
 </ion-card>
