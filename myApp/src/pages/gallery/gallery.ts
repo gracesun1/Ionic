@@ -31,9 +31,9 @@ export class GalleryPage {
         date: "2015/6/1"
       },
       {
-        imgsrc: "dubi.jpg",
-        city: "Dubi",
-        date: "2015/6/1"
+        imgsrc: "dubai.jpg",
+        city: "Dubai",
+        date: "2017/6/1"
       }
     )
 
